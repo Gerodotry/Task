@@ -56,7 +56,9 @@ create_draft("Dan", "hello@gmail.com", "Discussing upcoming projects and deadlin
 This example creates a draft email with the subject "Dan" sent to "hello@gmail.com" with the specified body text.
 
 ## Notes
+Exception Handling:
 
+- The script uses a try-except block to catch HttpError exceptions that might occur during Gmail API interactions. If an error occurs, it prints an error message, and the variable draft is set to None.
 - The script checks for existing OAuth 2.0 credentials and refreshes them if necessary.
 - Ensure that the Gmail API is enabled for your Google Cloud project.
 
